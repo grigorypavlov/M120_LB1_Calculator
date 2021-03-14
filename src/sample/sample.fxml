@@ -1,0 +1,21 @@
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="sample.Controller" alignment="center" hgap="10" vgap="10">
+    <BorderPane>
+        <top>
+            <MenuBar fx:id="menuBar">
+                <menus>
+                    <Menu fx:id="propertiesMenu" text="Properties">
+                        <items>
+                            <MenuItem fx:id="backgroundColorItem" text="Background Color"></MenuItem>
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+        </top>
+    </BorderPane>
+</GridPane>
