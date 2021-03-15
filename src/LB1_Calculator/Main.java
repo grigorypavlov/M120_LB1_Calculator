@@ -1,10 +1,13 @@
-package sample;
+package LB1_Calculator;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+import java.awt.*;
 
 public class Main extends Application {
 
@@ -12,16 +15,13 @@ public class Main extends Application {
         launch(args);
     }
 
+    @FXML
+    private MenuItem backgroundColorItem;
+
     @Override
     public void start(Stage Calculator) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
         Calculator.setTitle("Calculator");
-
-        /*Menu propertiesMenu = new Menu("Properties");
-        propertiesMenu.getItems().add(new MenuItem("Background Color"));
-        MenuBar menuBar = new MenuBar();
-        menuBar.getMenus().addAll(propertiesMenu);
-        BorderPane borderPane = new BorderPane();*/
 
         Calculator.setScene(new Scene(root, 600, 500));
         Calculator.show();
